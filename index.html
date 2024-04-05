@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+                <li><a href="#warranty">Bảo hành</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleCart()">Giỏ hàng (<span id="cartCount">0</span>)</button>
+    </header>
+    
+    <div id="cart" class="cart">
+        <h2>Giỏ hàng</h2>
+        <ul id="cartItems"></ul>
+        <p>Tổng tiền: <span id="totalPrice">0</span> đ</p>
+        <button onclick="checkout()">Thanh toán</button>
+        <button onclick="clearCart()">Xóa giỏ hàng</button>
+    </div>
+    
+    <div class="container">
+        <section id="products">
+            <h2>Danh sách sản phẩm</h2>
+            <div class="products">
+                <div class="product" id="product1">
+                    <h3>Sản phẩm 1</h3>
+                    <p class="price">Giá: 100 đ</p>
+                    <button onclick="addToCart('product1', 100)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product" id="product2">
+                    <h3>Sản phẩm 2</h3>
+                    <p class="price">Giá: 200 đ</p>
+                    <button onclick="addToCart('product2', 200)">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Giới thiệu</h2>
+            <p>Xin chào! Chúng tôi là cửa hàng đồng hồ chuyên cung cấp các sản phẩm chất lượng, đa dạng và phong phú.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Liên hệ</h2>
+            <p>Email: info@example.com</p>
+            <p>Điện thoại: 0123456789</p>
+        </section>
+
+        <section id="warranty">
+            <h2>Bảo hành</h2>
+            <p>Tất cả các sản phẩm được bảo hành trong vòng 1 năm kể từ ngày mua hàng.</p>
+        </section>
+    </div>
+    <footer>
+        <p>Họ và tên: Lê Thị Mỹ Duyên - MSV: 22810310135</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
