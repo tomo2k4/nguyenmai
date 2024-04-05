@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Bán Hàng</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="fixedText">
+    <p>Nguyễn Hiền Mai -- 22810310091 </p>
+  </div>
+
+  <header>
+    <h1>TRAO ĐỔI - BUÔN BÁN TRONG CỘNG ĐỒNG SINH VIÊN</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="loginBtn">Đăng nhập</a></li>
+        <li><a href="#" id="registerBtn">Đăng ký</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div id="productList">
+      <h2 style="font-size: 15px; color: #FF69B4; text-align: center">Danh sách sản phẩm</h2>
+      <div class="product">
+        <a href="product1.html">
+          <div class="product-icon"></div>
+          <p>Quần áo</p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="product2.html">
+          <div class="product-icon"></div>
+          <p>Đồ gia dụng</p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="product3.html">
+          <div class="product-icon"></div>
+          <p>Phụ kiện điện thoại</p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="product4.html">
+          <div class="product-icon"></div>
+          <p>Túi xách</p>
+        </a>
+      </div>
+      <!-- Thêm các sản phẩm khác tại đây -->
+    </div>
+  </main>
+
+  <footer>
+    <p>PASS ĐỒ DỄ DÀNG KHÔNG LO VỀ GIÁ</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Đăng nhập</h2>
+      <form id="loginForm">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required></br>
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Đăng nhập</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Đăng ký</h2>
+      <form id="registerForm">
+        <label for="newUsername">Tên đăng nhập:</label>
+        <input type="text" id="newUsername" name="newUsername" required></br>
+        <label for="newPassword">Mật khẩu:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
